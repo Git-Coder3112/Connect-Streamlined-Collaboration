@@ -6,19 +6,19 @@ import sys
 
 # Replace with your AWS access key and secret access key (or use AWS CLI/configuration for credentials)
 # REGION can also be specified in the AWS configuration
-ACCESS_KEY = 'AKIASDRUXVBR22P442KG'
-SECRET_KEY = '+c5s5D2WXgc+dzWlBWIa1qfj6n8QizhwTqMV0VRi'
+ACCESS_KEY = ''
+SECRET_KEY = ''
 
 # Replace with your AWS region and S3 bucket name
 REGION = 'ap-northeast-2'
-BUCKET_NAME = 'abid-s3-bucket-rep'
+BUCKET_NAME = ''
 
 # Replace with the name of the input audio file in your S3 bucket
 AUDIO_FILE_NAME = 'Arthur.mp3'
 
 # Replace with the name of the output transcript file in your S3 bucket
-TRANSCRIPT_FILE_NAME = 'transcribed.txt'
-SUMMARIZED_FILE_NAME = 'summarized.txt'  # Assuming this file is present in your S3 bucket
+TRANSCRIPT_FILE_NAME = ''
+SUMMARIZED_FILE_NAME = ''  # Assuming this file is present in your S3 bucket
 
 # Generate a unique job name with a timestamp
 transcription_job_name = f'transcription_job_{int(time.time())}'
