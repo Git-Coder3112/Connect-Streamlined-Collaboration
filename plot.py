@@ -3,9 +3,7 @@ import time
 import textwrap
 import spacy
 import sys
-import matplotlib.pyplot as plt
-import seaborn as sns
-from wordcloud import WordCloud
+
 
 # Replace with your AWS access key and secret access key (or use AWS CLI/configuration for credentials)
 # REGION can also be specified in the AWS configuration
@@ -168,41 +166,4 @@ if job['TranscriptionJob']['TranscriptionJobStatus'] == 'COMPLETED':
 
 else:
     print(f"Transcription job failed with status: {job['TranscriptionJob']['TranscriptionJobStatus']}")
-
-fig, axes = plt.subplots(2, 2, figsize=(14, 10))
-
-# Entity Distribution Bar Chart
-entity_types, entity_counts = zip(*entities_list)
-sns.barplot(ax=axes[0, 0], x=entity_counts, y=entity_types, palette="viridis")
-axes[0, 0].set_title("Entity Distribution")
-axes[0, 0].set_xlabel("Count")
-axes[0, 0].set_ylabel("Entity Types")
-
-# Sentiment Analysis Pie Chart
-sentiment_counts = sns.countplot(ax=axes[0, 1], x=targeted_sentiments_list, palette="muted")
-axes[0, 1].set_title("Sentiment Analysis")
-axes[0, 1].set_xlabel("Sentiment")
-axes[0, 1].set_ylabel("Count")
-
-# Key Phrase Word Cloud
-key_phrases_text = ' '.join(key_phrases_list)
-wordcloud = WordCloud(width=800, height=400, background_color="white").generate(key_phrases_text)
-axes[1, 0].imshow(wordcloud, interpolation='bilinear')
-axes[1, 0].set_title("Key Phrase Word Cloud")
-axes[1, 0].axis('off')
-
-# Language Distribution Bar Chart
-sns.countplot(ax=axes[1, 1], x=language_list, palette="pastel")
-axes[1, 1].set_title("Language Distribution")
-axes[1, 1].set_xlabel("Language")
-axes[1, 1].set_ylabel("Count")
-
-# Adjust layout for better visualization
-plt.tight_layout()
-
-# Save the figure if needed
-plt.savefig("visualization.png")
-
-# Show the plots
-plt.show()
 
