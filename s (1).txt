@@ -1,0 +1,27 @@
+Direct Summary:
+Whenever the other rats asked him if he would like to come out hunting with them, he would answer in a horse voice. At last one of the joists gave way and the beams fell with one edge on the floor, the walls shook the Cuello fell off and all the rats hair stood on end with fear and horror. A little later on that evening, the scabs come back and said they had found an old fashioned horse farm or there would be room board for all of them. Come falling in and the rats crawled out of the hole right away and stood on the floor in a long line. It's so nice and snug here, I guess I'll go back to my hole under the log for a while just to make up my mind.
+
+Entities:
+('Arthur', 'PERSON')
+('Aunt Josephine', 'PERSON')
+('an hour', 'TIME')
+('One night', 'TIME')
+('one', 'CARDINAL')
+('Cuello', 'ORG')
+('Arthur', 'PERSON')
+('Growled', 'PERSON')
+('Arthur', 'PERSON')
+('Said Arthur', 'PERSON')
+('tomorrow', 'DATE')
+('the night', 'TIME')
+('next morning', 'TIME')
+('a foggy day', 'DATE')
+('half', 'CARDINAL')
+('half', 'CARDINAL')
+
+Key Phrases: ['The story', 'Arthur', 'the rat', 'a time', 'a young rat', 'his mind', 'the other rats', 'hunting', 'a horse voice', 'yes or no']
+Languages: ['en']
+Overall Sentiment: NEUTRAL
+PII Entities: ['NAME']
+Top Keyphrases: ['The story', 'Arthur', 'the rat', 'a time', 'a young rat']
+Syntax Analysis Sample: [{'TokenId': 1, 'Text': 'The', 'BeginOffset': 0, 'EndOffset': 3, 'PartOfSpeech': {'Tag': 'DET', 'Score': 0.9999961853027344}}, {'TokenId': 2, 'Text': 'story', 'BeginOffset': 4, 'EndOffset': 9, 'PartOfSpeech': {'Tag': 'NOUN', 'Score': 0.9999420642852783}}, {'TokenId': 3, 'Text': 'of', 'BeginOffset': 10, 'EndOffset': 12, 'PartOfSpeech': {'Tag': 'ADP', 'Score': 0.9999994039535522}}, {'TokenId': 4, 'Text': 'Arthur', 'BeginOffset': 13, 'EndOffset': 19, 'PartOfSpeech': {'Tag': 'PROPN', 'Score': 1.0}}, {'TokenId': 5, 'Text': 'the', 'BeginOffset': 20, 'EndOffset': 23, 'PartOfSpeech': {'Tag': 'DET', 'Score': 0.9999996423721313}}]
